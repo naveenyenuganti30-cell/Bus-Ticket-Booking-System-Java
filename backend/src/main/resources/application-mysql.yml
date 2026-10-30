@@ -1,0 +1,12 @@
+# Active profile: -Dspring.profiles.active=mysql
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bus_booking_db?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password: rootpassword
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: false
